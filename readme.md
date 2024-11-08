@@ -8,7 +8,7 @@ While developing applications across multiple platforms, I needed a straightforw
 
 ## 💡 The Solution
 
-Night Owl 🦉 is a versatile, tag-based logging system designed to be simple, fast, and platform-independent. Built with C++ and SQLite at its core, it allows developers to define custom tags and easily send logs to a server for later retrieval based on these tags.
+Night Owl 🦉 is a versatile, tag-based logging system designed to be simple, fast, and platform-independent. Built with rust and SQLite at its core, it allows developers to define custom tags and easily send logs to a server for later retrieval based on these tags.
 
 ## ✨ Key Features
 
@@ -16,7 +16,7 @@ Night Owl 🦉 is a versatile, tag-based logging system designed to be simple, f
 - 📝 Two components for each log entry: message and data
 - 📌 Support for predefined tags like User, System, Other
 - 🔄 Fallback type for unknown tags
-- ⚡ Fast and efficient C++ core implementation
+- ⚡ Fast and efficient rust core implementation
 - 💾 SQLite database for robust storage and quick retrieval
 - 🐳 Docker image for easy deployment
 - 📦 SDKs for multiple platforms (Flutter, JavaScript)
@@ -98,7 +98,7 @@ Create a `log_config.json` file in your project:
 
 Night Owl consists of three main components:
 
-1. **Core Engine (C++)**
+1. **Core Engine (rust)**
    - Handles log processing and storage
    - Optimized for performance
    - Platform-independent implementation
@@ -120,7 +120,6 @@ Night Owl consists of three main components:
 | `log(String tag, String message, Object data)` | Logs a new entry |
 | `getLogs(String tag, Options options)` | Retrieves logs by tag |
 | `searchLogs(SearchOptions options)` | Searches logs with criteria |
-| `clearLogs(String tag)` | Clears logs for a specific tag |
 
 ## 🎯 Getting Started
 
